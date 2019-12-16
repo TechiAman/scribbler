@@ -1,0 +1,64 @@
+body {
+    font-family: 'Montez', cursive;
+    background: url("./images/background.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.logo-container {
+    float: left;
+}
+
+.logo-container h1 {
+    margin: 0;
+    color: blue;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.btn-container {
+    float: right;
+}
+
+.btn-container button {
+    background: blue;
+    border: none;
+    outline: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: white;
+    padding: 8px;
+}
+
+section .scribbler-action {
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    right: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+section .scribbler-action button {
+    background-color: yellow;
+    border: none;
+    background: yellow;
+    outline: none;
+    padding: 0 22px;
+    align-items: center;
+    display: flex;
+    height: 37px;
+    border-radius: 5px;
+}
