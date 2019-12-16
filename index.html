@@ -16,16 +16,67 @@
             <span>Explore . Imagine . Create</span>
         </div>
         <div class="btn-container">
-            <button >Sign Up</button>
-            <button>Log In</button>
+            <button onclick="showSignUpModal()">Sign Up</button>
+            <button onClick="showSignInModal()">Log In</button>
         </div>
     </nav>
     <section>
         <div class="scribbler-action">
-            <button>All Posts</button>
+            <button onclick="">All Posts</button>
             <button>Create Post</button>
         </div>
     </section>
+    <div id="signUpModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Get Started!</p>
+            <hr />
+            <form>
+                <div class="form-input">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name" required></input>
+                </div>
+                <div class="form-input">
+                    <label>Username</label>
+                    <input type="text" placeholder="Enter your name" required></input>
+                </div>
+                <div class="form-input">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password" required></input>
+                </div>
+                <div class="form-input">
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder="Re-enter your password" required></input>
+                </div>
+
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <span class="close-signin">&times;</span>
+            <p>Welcome Back!</p>
+            <hr />
+            <form>
+                <div class="form-input">
+                    <label>Username</label>
+                    <input type="text" placeholder="Enter your username" required></input>
+                </div>
+                <div class="form-input">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password" required></input>
+                </div>
+                <button type="submit">Sign In</button>
+                <p class="not-a-member">Not a member? <span onclick="showSignUpModal()">Sign Up</span></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>
