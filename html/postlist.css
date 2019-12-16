@@ -1,13 +1,14 @@
 body {
+    background-color: #ffeddd;
     font-family: 'Montez', cursive;
-    background: url("./images/background.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 100%;
     width: 100%;
 }
 
+.post-container {
+    margin-top: 100px;
+    font-falily: 'Arial';
+}
 .logo-container {
     float: left;
 }
@@ -38,43 +39,42 @@ body {
     padding: 8px;
 }
 
-section .scribbler-action {
-    width: 20%;
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    right: 50%;
+.post-container {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post {
+    margin: 0 auto;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    width: 40%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-section .scribbler-action button {
-    background-color: yellow;
-    border: none;
-    background: yellow;
-    outline: none;
-    padding: 0 22px;
-    align-items: center;
-    display: flex;
-    height: 37px;
-    border-radius: 5px;
+.post:hover {
+    box-shadow: 5px 5px #E8E8E8;
 }
 
-section .scribbler-action a {
-    background-color: yellow;
-    border: none;
-    background: yellow;
-    outline: none;
-    padding: 0 22px;
-    align-items: center;
+.post .name {
+    width: 40%;
+    border-radius: 15px 0 0 0 0;
+    background-color: white;
     display: flex;
-    height: 37px;
-    border-radius: 5px;
-    text-decoration: none;
+    align-items: center;
+    border-right: 1px solid #ccc;
 }
+
+.post .content {
+    padding: 10px;
+    background-color: #E8E8E8;
+}
+
 
 .modal {
     display: none;
@@ -139,25 +139,4 @@ section .scribbler-action a {
     padding: 10px;
     margin-top: 20px;
     color: white;
-}
-
-.not-a-member {
-    text-align: center;
-}
-
-.not-a-member span {
-    color: blue;
-}
-
-.modal-content form .post-create {
-    text-align: center;
-    width: 20%;
-}
-
-#post-create-btn {
-    text-align: center;
-}
-
-#postContentModal .modal-content {
-    width: 70%;
 }

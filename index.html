@@ -22,8 +22,8 @@
     </nav>
     <section>
         <div class="scribbler-action">
-            <button onclick="">All Posts</button>
-            <button>Create Post</button>
+            <a href="./html/postslist.html">All Posts</a>
+            <button onClick="showCreatePostModal()">Create Post</button>
         </div>
     </section>
     <div id="signUpModal" class="modal">
@@ -72,6 +72,27 @@
                 </div>
                 <button type="submit">Sign In</button>
                 <p class="not-a-member">Not a member? <span onclick="showSignUpModal()">Sign Up</span></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="postContentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-postmodal">&times;</span>
+            <p>Pen your Post</p>
+            <hr />
+            <form>
+                <div class="form-input">
+                    <label>Title</label>
+                    <input type="text" placeholder="Enter the title of your post" required></input>
+                </div>
+                <div class="form-input">
+                    <label>Content</label>
+                    <textarea type="text" col="100" rows="8" placeholder="Enter the content of the post" required></textarea>
+                </div>
+                <div id="post-create-btn">
+                    <button type="submit" class="post-create">Create</button>
+                </div>
             </form>
         </div>
     </div>
